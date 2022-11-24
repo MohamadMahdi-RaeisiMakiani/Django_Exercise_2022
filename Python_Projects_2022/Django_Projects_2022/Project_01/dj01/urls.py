@@ -21,6 +21,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('', include('notes.urls')),
     path('', include('BookStore.urls')),
+    path('', include('DailyTask.urls')),
 ]
 
 
