@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		{% block pagetitle %} {% endblock %}
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{% static 'styles/css/style_BS_02.css' %}"
+		/>
+	</head>
+	<body>
+		{% block content %} {% endblock %}
+		<p class="base-temp">This page was synced with Base Template.</p>
+	</body>
+</html>

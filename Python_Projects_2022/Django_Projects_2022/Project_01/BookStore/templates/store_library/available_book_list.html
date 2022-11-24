@@ -1,0 +1,12 @@
+{% extends "base.html" %} {% block pagetitle %}
+<title>All Available Books</title>
+{% endblock %} {% block content %}
+<div class="names-box-book">
+	<h1 class="avb-head">These books are available in the store library</h1>
+	<ul class="book-names-list">
+		{% for all_books in book_names_title %}
+		<li class="book-N">{{all_books.book_name}}</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock %}

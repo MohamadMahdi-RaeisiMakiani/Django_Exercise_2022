@@ -27,13 +27,15 @@ SECRET_KEY = 'django-insecure-_h!=psz+q847x25334*dpy5=t^5bj__gkgq+3dso2a6+uupxl9
 # Development Mode - Safe Mode - Low Level Security
 # When we release these app we should make DEBUG = False
 # ---------------------
+
+# modifies by me
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# modifies by me
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,6 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # modified_apps
     'home',
+    'notes',
+    'BookStore',
+    'DailyTask',
 ]
 
 MIDDLEWARE = [
@@ -57,10 +62,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'dj01.urls'
 
+
+# modifies by me DIRS
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'static/templates'
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -121,7 +130,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+
+# modifies by me
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

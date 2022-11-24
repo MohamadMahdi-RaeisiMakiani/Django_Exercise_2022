@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Just a note</title>
+		<style>
+			.note-box {
+				text-align: center;
+				margin: 3rem auto;
+				width: 40rem;
+				border: 1px solid black;
+			}
+			#note-title {
+				margin: 1rem auto;
+				text-align: center;
+			}
+			#note-text {
+				margin: 1rem;
+			}
+			#note-time-word {
+				text-align: left;
+				margin: 1rem;
+			}
+			#note-time {
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="note-box">
+			<h1 id="note-title">{{note_num.title}}</h1>
+			<p id="note-text">{{note_num.text}}</p>
+			<p id="note-time-word">
+				Time<small id="note-time">{{note_num.created}}</small>
+			</p>
+		</div>
+	</body>
+</html>
