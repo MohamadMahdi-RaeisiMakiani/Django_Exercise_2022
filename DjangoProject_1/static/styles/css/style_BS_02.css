@@ -1,0 +1,25 @@
+.names-box-book {
+	text-align: center;
+}
+
+.book-N {
+	color: green;
+	font-size: 1.5rem;
+}
+
+.book-names-list {
+	/* list-style-type: none; */
+	margin: 1rem auto;
+	width: 20rem;
+}
+
+.base-temp {
+	font-size: 1.5rem;
+	text-decoration: underline;
+	outline: 3px solid black;
+	text-align: center;
+	padding: 1rem;
+}
+.general-routes:hover {
+	font-size: 1.5rem;
+}
