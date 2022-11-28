@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Book State</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="{% static 'styles/css/style_pr02.css' %}"
+		/>
+	</head>
+	<body>
+		<div class="book-section">
+			<h1 class="book-name">{{just_one_book.book_name}}</h1>
+			<p class="book-describtion">{{just_one_book.book_describtion}}</p>
+			<p class="book-avalability-check">
+				is it available? |{{just_one_book.book_availability}}
+			</p>
+			<p class="book-copies">
+				Number of Copies: |{{just_one_book.copies_number}}
+			</p>
+			<p class="book-price">Price: ${{just_one_book.book_price}}</p>
+		</div>
+		<div style="display: none">{{just_one_book}}</div>
+		<div class="general-routeBox">
+			<a href="{% url 'booksall.list' %}" class="general-routes"
+				>All Books</a
+			>
+			<a href="{% url 'app.mainpage' %}" class="general-routes">Home</a>
+		</div>
+	</body>
+</html>

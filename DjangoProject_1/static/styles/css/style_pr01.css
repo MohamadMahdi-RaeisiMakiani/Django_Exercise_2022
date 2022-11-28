@@ -1,0 +1,50 @@
+body {
+	background-color: #9acd3250;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.general-routeBox {
+	text-align: center;
+	margin: 3rem auto;
+	width: 40rem;
+}
+.general-routes {
+	padding: 1rem;
+	margin: 1rem;
+	background-color: pink;
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	border-radius: 0.5rem;
+	transition: all ease 1s;
+}
+.general-routes:hover {
+	font-size: 1.5rem;
+}
+
+.book-section {
+	margin: 3rem auto;
+	width: 60rem;
+	border: 3px solid white;
+	background-color: #9acd3280;
+}
+.book-name {
+	text-align: center;
+	font-family: "Courier New", Courier, monospace;
+}
+.book-describtion {
+	text-align: justify;
+	padding: 2rem;
+}
+.book-avalability-check {
+	padding: 0.5rem;
+}
+.book-copies {
+	padding: 0.5rem;
+}
+.book-price {
+	padding: 0.5rem;
+}
+p {
+	font-size: large;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<style>
+			body {
+				background-color: #add8e660;
+			}
+
+			.head-elements {
+				margin: 3rem auto;
+				background-color: skyblue;
+				border: 3px solid hotpink;
+				border-radius: 0.5rem;
+				width: 45rem;
+				text-align: center;
+			}
+			.project-routes {
+				text-align: center;
+				width: 60rem;
+				margin: 3rem auto;
+			}
+			.route-links {
+				color: black;
+				text-decoration: none;
+				border: 1px solid black;
+				border-radius: 0.5rem;
+				padding: 1rem;
+				margin: 1rem;
+				background-color: pink;
+			}
+			.route-links:hover {
+				background-color: hotpink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head-elements">
+			<h1>Welcome to dj01 Project!</h1>
+			<h3>Today is : {{today}}</h3>
+			<p>Select The Page Below.</p>
+		</div>
+		<div class="project-routes">
+			<nav class="route-all">
+				<a
+					href="http://localhost:8000/admin/"
+					class="route-links"
+					target="_blank"
+					>Admin Login</a
+				>
+				<a
+					href="http://localhost:8000/author"
+					class="route-links"
+					target="_blank"
+					>Author (Restricted Area)</a
+				>
+				<a
+					href="http://localhost:8000/notes-titles"
+					class="route-links"
+					target="_blank"
+					>Notes Titles</a
+				>
+				<a
+					href="http://localhost:8000/time-res"
+					class="route-links"
+					target="_blank"
+					>Times (Restricted Area)</a
+				>
+				<a
+					href="http://localhost:8000/store-library-a-books"
+					class="route-links"
+					target="_blank"
+					>Library Books</a
+				>
+			</nav>
+		</div>
+	</body>
+</html>

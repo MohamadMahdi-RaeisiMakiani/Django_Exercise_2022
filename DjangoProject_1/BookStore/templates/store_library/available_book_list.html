@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% block pagetitle %}
+<title>All Available Books</title>
+{% endblock %} {% block content %}
+<div class="names-box-book">
+	<h1 class="avb-head">These books are available in the store library</h1>
+	<ul class="book-names-list">
+		{% for all_books in book_names_title %}
+		<li class="book-N" style="margin-top: 2rem">
+			<a
+				href="{% url 'books.number' pk=all_books.id%}"
+				style="
+					text-decoration: none;
+					color: green;
+					border: 1px solid black;
+					border-radius: 0.5rem;
+					padding: 0.5rem;
+				"
+				id="linked-book"
+				>{{all_books.book_name}}</a
+			>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+<div
+	class="general-routeBox"
+	style="text-align: center; margin: 3rem auto; width: 40rem"
+>
+	<a
+		href="{% url 'app.mainpage' %}"
+		class="general-routes"
+		style="
+			padding: 1rem;
+			margin: 1rem;
+			background-color: #ffc0cb;
+			text-decoration: none;
+			color: black;
+			border: 1px solid black;
+			border-radius: 0.5rem;
+			transition: all ease 1s;
+		"
+		onMouseOver="this.style.fontSize='1.5rem'"
+		onMouseOut="this.style.fontSize='1rem'"
+		>Home</a
+	>
+</div>
+<div style="display: none">{{book_names_title}}</div>
+{% endblock %}
