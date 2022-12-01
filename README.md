@@ -11,3 +11,6 @@ Django Project 01 Completed.
 Dependencies:
   -Python 3.X (In this project 3.10.6)
   -Django 4.1.X (In this project 4.1.3)
+
+* In new commit, The completed file is "Django2022ExerciseProjects_All_V1.zip" for version 1.
+* Download and Enjoy it :)
